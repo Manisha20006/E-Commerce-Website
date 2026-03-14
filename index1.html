@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>ShopSmart</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+<h2>ShopSmart</h2>
+
+<nav>
+
+<a href="index1.html">Home</a>
+
+<a href="cart1.html">Cart 🛒 <span id="cartCount">0</span></a>
+
+<button onclick="toggleDark()">🌙</button>
+
+</nav>
+
+</header>
+
+
+<!-- Hero Slider -->
+
+ <section class="hero">
+
+<div class="hero-text">
+<h1>New Fashion Collection</h1>
+<p>Up to 50% Off</p>
+<a href="shop1.html">
+<button>Shop Now</button>
+</a>
+</div>
+
+</section>
+
+
+
+<!-- Search -->
+
+<section class="search-box">
+
+<input type="text" id="searchInput" placeholder="Search products">
+
+</section>
+
+
+<!-- Filter Buttons -->
+
+<section class="filters">
+
+<button onclick="filterProducts('all')">All</button>
+<button onclick="filterProducts('cloth')">Clothes</button>
+<button onclick="filterProducts('shoe')">Shoes</button>
+<button onclick="filterProducts('bag')">Bags</button>
+
+</section>
+
+
+<!-- Products -->
+
+<section class="products">
+
+<h2>Featured Products</h2>
+
+<div class="product-container">
+
+<div class="product cloth">
+<img src="https://res.cloudinary.com/dekf6zybg/image/upload/v1773066008/Men-premium-T-Shirt-Black-Yellow-and-White-New-Airtex-64878450-_1_mtqzoh.jpg">
+<h3>T-Shirt</h3>
+<p>₹499</p>
+<button onclick="addToCart('T-Shirt',499)">Add to Cart</button>
+</div>
+
+<div class="product cloth">
+<img src="https://res.cloudinary.com/dekf6zybg/image/upload/v1773502396/schoffel-mens-hallaton-down-jacket-blue-cutout-front-01_kbpemh.png">
+<h3>Jacket</h3>
+<p>₹1499</p>
+<button onclick="addToCart('Jacket',1499)">Add to Cart</button>
+</div>
+<div class="product cloth">
+<img src="f1.jpg">
+<h3>Shirt</h3>
+<p>₹1499</p>
+<button onclick="addToCart('Shirt',1499)">Add to Cart</button>
+</div>
+<div class="product cloth">
+<img src="https://res.cloudinary.com/dekf6zybg/image/upload/v1773502532/1736527960-untitled-3-67815035563fa.jpg_wl0eei.jpg">
+<h3>Jeans</h3>
+<p>₹1000</p>
+<button onclick="addToCart('Jeans',1000)">Add to Cart</button>
+</div>
+<div class="product cloth">
+<img src="https://res.cloudinary.com/dekf6zybg/image/upload/v1773502740/Tie_Shoulder_Layered_Ruched_Cami_Dress_In_Pink_jemncv.jpg">
+<h3>Frock</h3>
+<p>₹1400</p>
+<button onclick="addToCart('Frock',1400)">Add to Cart</button>
+</div>
+<div class="product cloth">
+<img src="f3.jpg">
+<h3>Shirt</h3>
+<p>₹1200</p>
+<button onclick="addToCart('Shirt',1200)">Add to Cart</button>
+</div>
+<div class="product cloth">
+<img src="https://res.cloudinary.com/dekf6zybg/image/upload/v1773502956/Blanc9WomenBlack_WhiteCheckeredCropTopWithContrastCollar-1_bdqku2.jpg">
+<h3>Top</h3>
+<p>₹900</p>
+<button onclick="addToCart('Top',900)">Add to Cart</button>
+</div>
+<div class="product cloth">
+<img src="https://res.cloudinary.com/dekf6zybg/image/upload/v1773503039/6980bb36-31fb-431d-990a-289d15b5e9701733229891366-Roadster-Men-Jackets-6151733229890711-1_gseflx.webp">
+<h3>Jeans Jacket</h3>
+<p>₹1499</p>
+<button onclick="addToCart('Jeans Jacket',1499)">Add to Cart</button>
+</div>
+<div class="product shoe">
+<img src="https://res.cloudinary.com/dekf6zybg/image/upload/v1773503138/LEVEL_LEVEL_WHT-L.GRY_07_831c7a2c-ff1b-4011-9268-b11f984219c6_1200x1200_ktsgi4.jpg">
+<h3>Shoes</h3>
+<p>₹1999</p>
+<button onclick="addToCart('Shoes',1999)">Add to Cart</button>
+</div>
+
+<div class="product bag">
+<img src="https://res.cloudinary.com/dekf6zybg/image/upload/v1773503252/619b4lSPuRL_gqcwho.jpg">
+<h3>Bag</h3>
+<p>₹999</p>
+<button onclick="addToCart('Bag',999)">Add to Cart</button>
+</div>
+</div>
+
+</section>
+
+<script src="script1.js"></script>
+
+<div id="popup" class="popup">
+✅ Product added to cart!
+</div>
+</body>
+
+</html>
